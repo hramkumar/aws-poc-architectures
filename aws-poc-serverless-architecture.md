@@ -178,9 +178,11 @@ After the Lambda function runs successfully, the â€œExecution result: succeededâ
 1. In the AWS Management Console, search for and open `API Gateway`.
 
 2. On the REST API card with a public authentication, choose Build and configure the following settings:
-* Choose the protocol: REST
-* Create new API: New API
-* API name: POC-API
+* Choose an API type: `REST API` and click on "Build"
+Note: If you get any pop-up "Create your first API" click on X (close)
+* Choose the protocol: `REST`
+* Create new API: `New API`
+* API name: `POC-API`
 * Endpoint Type: Regional
 
 3. Choose Create API.
