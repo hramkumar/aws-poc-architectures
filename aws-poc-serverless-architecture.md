@@ -153,9 +153,10 @@ When you use Lambda, you are responsible only for your code. Lambda manages the 
 
 ### Testing the POC-Lambda-1 Lambda function
 
-1. In the Test tab, create a new event that has the following settings:
+1. In the Test button, click on the drop down arrow and select `Configure test event`
+2. And choose the following settings:
 * Event name: `POC-Lambda-Test-1`
-* Template-Optional: `DynamoDB`
+* Template-Optional: `dynamodb-update`
 The SQS template appears in the Event JSON field.
 
 3. Save your changes and choose Test.
