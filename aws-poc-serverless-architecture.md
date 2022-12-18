@@ -93,7 +93,7 @@ The Create policy page appears. You can create and edit a policy in the visual e
 
 2. Choose Create function and configure the following settings:
 * Function option: Author from scratch
-* Function name: POC-Lambda-1
+* Function name: `POC-Lambda-1`
 * Runtime: Python 3.9
 * Change default execution role: Use an existing role
 * Existing role: `Lambda-DynamoDB-Role`
@@ -156,9 +156,20 @@ When you use Lambda, you are responsible only for your code. Lambda manages the 
 2. And choose the following settings:
 * Event name: `POC-Lambda-Test-1`
 * Template-Optional: `dynamodb-update`
-The SQS template appears in the Event JSON field.
 
-3. Save your changes and choose Test.
+3. In the Event JSON field, paste the below code and click on Save.
+
+```
+{
+    "operation": "echo",
+    "payload": {
+        "somekey1": "somevalue1",
+        "somekey2": "somevalue2"
+    }
+}
+```
+
+4. Now, click on Test.
 
 After the Lambda function runs successfully, the “Execution result: succeeded” message appears in the notification banner in the Test section.
 
