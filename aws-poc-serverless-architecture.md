@@ -272,19 +272,21 @@ We're all set to run our solution!
 In this task, we will delete the AWS resources that you created for this exercise.
 
 1. Delete the DynamoDB table.
-  * Open the DynamoDB console.
-  * In the navigation pane, choose Tables.
-  * Select the orders table.
-  * Choose Delete and confirm your actions.
+* Open the DynamoDB console.
+* In the navigation pane, choose Tables.
+* Select the `name` table.
+* Choose Delete and confirm your actions.
 
 2. Delete the Lambda functions.
-  * Open the Lambda console.
-  * Select the Lambda function that you created in this exercise: POC-Lambda-1
-  * Choose Actions, Delete.  
-  * Confirm your actions and close the dialog box.
+* Open the Lambda console.
+* Select the Lambda function that we created `POC-Lambda-1`
+* Choose Actions, Delete.  
+* Confirm your actions and close the dialog box.
   
 3. Delete the API that you created.
 * Open the API Gateway console.
-* Select POC-API.
+* Select `POC-API`.
 * Choose Actions, Delete.
 * Confirm your actions.  
+
+I hope you enjoyed and learnt something. Keep learning!
