@@ -33,8 +33,8 @@ The Create policy page appears. You can create and edit a policy in the visual e
             "Sid": "VisualEditor0",
             "Action": [
                 "dynamodb:PutItem",
-		        "dynamodb:GetItem",
-		        "dynamodb:DeleteItem",
+		"dynamodb:GetItem",
+		"dynamodb:DeleteItem",
                 "dynamodb:DescribeTable"
             ],
             "Effect": "Allow",
@@ -43,9 +43,9 @@ The Create policy page appears. You can create and edit a policy in the visual e
 	    {
             "Sid": "VisualEditor1",
             "Action": [
-		        "logs:CreateLogGroup",
-		        "logs:CreateLogStream",
-		        "logs:PutLogEvents"
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
             ],
             "Effect": "Allow",
             "Resource": "*"       
