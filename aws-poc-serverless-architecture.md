@@ -173,6 +173,15 @@ When you use Lambda, you are responsible only for your code. Lambda manages the 
 
 After the Lambda function runs successfully, the “Execution result: succeeded” message appears in the notification banner in the Test section.
 
+### Copy the ARN of the Lambda Function
+Navigate to Lambda > Functions > POC-Lambda-1 if you are on some other page.
+1. On the POC-Lambda-1 page, expand "Function overview" and copy the Function ARN.
+
+It will look something like this:
+```
+arn:aws:lambda:us-east-1:xxxxxxxxxxxx:function:POC-Lambda-1
+```
+
 ### Create API in API Gateway
 
 1. In the AWS Management Console, search for and open `API Gateway`.
