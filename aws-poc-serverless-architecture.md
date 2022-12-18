@@ -265,7 +265,7 @@ We're all set to run our solution!
 }
 ```
 
-2. To validate that the item is indeed inserted into DynamoDB table, go to Dynamo console, select `POC-Lambda-Test-1` table, select "Items" tab, and the newly inserted item should be displayed.
+2. To validate that the item is indeed inserted into DynamoDB table, go to Dynamo console, select `name` table, select "Items" tab, and the newly inserted item should be displayed.
 
 ### Cleaning up
 
