@@ -25,7 +25,8 @@ The Create policy page appears. You can create and edit a policy in the visual e
 
 6. In the JSON tab, paste the following code:
 
-```{
+```
+{
     "Version": "2012-10-17",
     "Statement": [
         {
