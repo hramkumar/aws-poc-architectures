@@ -89,7 +89,7 @@ The Create policy page appears. You can create and edit a policy in the visual e
 
 ### Creating a Lambda function
 
-1. In the AWS Management Console search box, enter Lambda and from the list, choose Lambda.
+1. In the AWS Management Console search box, enter Lambda and from the list, choose `Lambda`.
 
 2. Choose Create function and configure the following settings:
 * Function option: Author from scratch
