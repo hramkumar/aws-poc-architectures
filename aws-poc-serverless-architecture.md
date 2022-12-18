@@ -31,27 +31,25 @@ The Create policy page appears. You can create and edit a policy in the visual e
     "Statement": [
         {
             "Sid": "VisualEditor0",
-            "Effect": "Allow",
             "Action": [
                 "dynamodb:PutItem",
-		"dynamodb:GetItem",
-		"dynamodb:DeleteItem",
+		        "dynamodb:GetItem",
+		        "dynamodb:DeleteItem",
                 "dynamodb:DescribeTable"
             ],
             "Effect": "Allow",
             "Resource": "*"
-        }
-    ],
-	{
-            "Sid": "",
-            "Resource": "*",
+        },
+	    {
+            "Sid": "VisualEditor1",
             "Action": [
-		"logs:CreateLogGroup",
-		"logs:CreateLogStream",
-		"logs:PutLogEvents"
+		        "logs:CreateLogGroup",
+		        "logs:CreateLogStream",
+		        "logs:PutLogEvents"
             ],
-            "Effect": "Allow"
-	}
+            "Effect": "Allow",
+            "Resource": "*"       
+	    }
 	]
 }
 ```
