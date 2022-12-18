@@ -1,1 +1,0 @@
-# aws-poc-serverless-architecture
