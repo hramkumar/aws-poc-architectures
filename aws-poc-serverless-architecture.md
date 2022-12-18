@@ -188,18 +188,14 @@ Note: If you get any pop-up "Create your first API" click on X (close)
 3. Choose Create API.
 
 4. On the Actions menu, choose `Create Resource`.
-
 5. Input `DynamoDBManager` in the Resource Name, Resource Path will get populated. Click "Create Resource"
-
 6. Select `DynamoDBManager` and on the Actions menu, choose `Create Method`.
-
-7. Open the method menu by choosing the down arrow, and choose POST. Save your changes by choosing the check mark.
-
+7. Open the method menu by choosing the down arrow, and choose `POST`. Save your changes by choosing the check mark.
 8. In the POST - Setup pane, configure the following settings:
 * Integration type: Lambda Function
 * AWS Region: us-east-1
-
 9. The integration will come up automatically with "Lambda Function" option selected. Select `POC-Lambda-Test-1` function that we created earlier.
+10. On the pop-up "Add Permission to Lambda Function" clock on OK.
 
 ### Deploy the API
 
