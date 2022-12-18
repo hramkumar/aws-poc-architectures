@@ -203,8 +203,34 @@ Note: If you get any pop-up "Create your first API" click on X (close)
 8. In the POST - Setup pane, configure the following settings:
 * Integration type: Lambda Function
 * AWS Region: us-east-1
-9. The integration will come up automatically with "Lambda Function" option selected. Select `POC-Lambda-Test-1` function that we created earlier.
+9. The integration will come up automatically with "Lambda Function" option selected. Copy and Paste the Function ARN for `POC-Lambda-Test-1` that we created earlier.
 10. On the pop-up "Add Permission to Lambda Function" clock on OK.
+
+### Testing the API Gateway with DynamoDB
+
+1. Select the POST Method and click on the TEST icon.
+2. Paste the below code in `Request Body` and click on TEST.
+
+```
+{
+    "operation": "create",
+    "tableName": "name",
+    "payload": {
+        "Item": {
+            "id": "1",
+            "name": "Bob"
+        }
+    }
+}
+```
+3. The test should be successful and the response should be something like this:
+
+```
+Request: /dynamodbmanager
+Status: 200
+Latency: 299 ms
+Response Body
+```
 
 ### Deploy the API
 
