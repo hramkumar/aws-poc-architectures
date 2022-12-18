@@ -235,10 +235,18 @@ Response Body
 ### Deploy the API
 
 1. Click "Actions", select "Deploy API"
+2. Now it is going to ask you about a stage.
+3. Select `[New Stage]` for "Deployment stage".
+4. Give `Staging` as "Stage name". Click "Deploy".
+5. Copy the "Invoke URL" from screen and paste it somewhere.
 
-2. Now it is going to ask you about a stage. Select "[New Stage]" for "Deployment stage". Give "Prod" as "Stage name". Click "Deploy"
+```
+https://11qe1w1rt1.execute-api.us-east-1.amazonaws.com/Staging/dynamodbmanager
+```
 
-We're all set to run our solution! To invoke our API endpoint, we need the endpoint url. In the "Stages" screen, expand the stage "Prod", select "POST" method, and copy the "Invoke URL" from screen
+To Test with our API endpoint, we need the endpoint url.
+
+We're all set to run our solution!
 
 ### Running our AWS POC Serverless solution
 
@@ -247,11 +255,11 @@ We're all set to run our solution! To invoke our API endpoint, we need the endpo
 ```
 {
     "operation": "create",
-    "tableName": "lambda-apigateway",
+    "tableName": "name",
     "payload": {
         "Item": {
             "id": "1234ABCD",
-            "number": 5
+            "name": "Rob"
         }
     }
 }
