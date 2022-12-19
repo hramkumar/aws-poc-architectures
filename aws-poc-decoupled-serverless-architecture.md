@@ -98,6 +98,14 @@ For the policy name, enter `Lambda-Read-SQS`.
 
 5. Choose Create role.
 
+**Follow the previous steps to create two more IAM role**
+
+6. An IAM role for Amazon API Gateway: This role grants permissions to send data to the SQS queue and push logs to Amazon CloudWatch for troubleshooting. Use the following information to create the role.
+* IAM role name: APIGateway-SQS
+* Trusted entity type: AWS service
+* Common use cases: API Gateway
+* Attach policies: AmazonAPIGatewayPushToCloudWatchLogs
+
 ### Creating a DynamoDB table
 
 1. In the search box of the AWS Management Console, enter `DynamoDB`.
