@@ -4,9 +4,11 @@ This exercise provides with instructions for how to build a proof of concept for
 
 Suppose you have a customer that needs a serverless web backend hosted on AWS. The customer sells something and they need an architecture that can easily scale in and out as demand changes. The customer also wants to ensure that the application has decoupled application components. In other words a microservices architecture.
 
-The following architectural diagram shows the flow for the serverless solution that will be built.
+The following architectural diagram shows the flow for the decoupled serverless solution that will be built.
 
-![aws-poc-serverless-architecture drawio](https://user-images.githubusercontent.com/8630317/208302822-1e7fccfb-3769-4d12-a9d2-18bb8b6a87bf.png)
+
+![aws-poc-decoupled-serverless-architecture drawio](https://user-images.githubusercontent.com/8630317/208480132-2a6095e3-eedf-4770-b96e-0c7f2bde4f9f.png)
+
 
 
 ### Creating necessary Policies and Roles
@@ -90,7 +92,7 @@ For the policy name, enter `Lambda-Read-SQS`.
 * Common use cases: Lambda
 * Choose Next.
 
-3. On the Add permissions page, select `Lambda-Write-DynamoDB` and Choose Next
+3. On the Add permissions page, select `Lambda-Write-DynamoDB` and `Lambda-Read-SQS`. Choose Next.
 
 4. For Role name, enter `Lambda-DynamoDB-Role`.
 
