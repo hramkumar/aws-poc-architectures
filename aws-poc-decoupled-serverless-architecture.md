@@ -94,7 +94,7 @@ For the policy name, enter `Lambda-Read-SQS`.
 
 3. On the Add permissions page, select `Lambda-Write-DynamoDB` and `Lambda-Read-SQS`. Choose Next.
 
-4. For Role name, enter `Lambda-DynamoDB-Role`.
+4. For Role name, enter `SQS-Lambda-DynamoDB-Role`.
 
 5. Choose Create role.
 
