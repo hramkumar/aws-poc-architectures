@@ -202,6 +202,14 @@ def lambda_handler(event, context):
 The Lambda code passes arguments to a function call. As a result, when a trigger invokes a function, Lambda runs the code that you specify.
 
 When you use Lambda, you are responsible only for your code. Lambda manages the memory, CPU, network, and other resources to run your code.
+	
+#### Setting up Amazon SQS as a trigger to invoke the function
+
+1. Choose Add trigger.
+
+2. For Trigger configuration, enter SQS and choose the service in the list.
+
+3. For SQS queue, choose `POC-Queue`, and add the trigger by choosing Add.
 
 ### Testing the POC-Lambda-1 Lambda function
 
