@@ -343,8 +343,13 @@ In this task, we will delete the AWS resources that you created for this exercis
 * Select the Lambda function that we created `POC-Lambda-1`
 * Choose Actions, Delete.  
 * Confirm your actions and close the dialog box.
+	
+3. Delete the SQS queue.
+* Open the Amazon SQS console.
+* Select the queue that you created in this exercise.
+* Choose Delete and confirm your actions.
   
-3. Delete the API that you created.
+4. Delete the API that you created.
 * Open the API Gateway console.
 * Select `POC-API`.
 * Choose Actions, Delete.
