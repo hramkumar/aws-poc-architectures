@@ -101,10 +101,10 @@ For the policy name, enter `Lambda-Read-SQS`.
 **Follow the previous steps to create two more IAM role**
 
 6. An IAM role for Amazon API Gateway: This role grants permissions to send data to the SQS queue and push logs to Amazon CloudWatch for troubleshooting. Use the following information to create the role.
-* IAM role name: APIGateway-SQS
-* Trusted entity type: AWS service
-* Common use cases: API Gateway
-* Attach policies: AmazonAPIGatewayPushToCloudWatchLogs
+* IAM role name: `APIGateway-SQS`
+* Trusted entity type: `AWS service`
+* Common use cases: `API Gateway`
+* Attach policies: `AmazonAPIGatewayPushToCloudWatchLogs`
 
 ### Creating a DynamoDB table
 
@@ -118,6 +118,27 @@ For the policy name, enter `Lambda-Read-SQS`.
 * Data type: Keep String
 
 4. Keep the remaining settings at their default values, and choose Create table.
+
+### Creating a SQS queue
+
+1. In the AWS Management Console search box, enter SQS and from the list, choose Simple Queue Service.
+
+2. On the Get started card, choose Create queue.
+
+The Create queue page appears.
+
+3. Configure the following settings:
+* Name: POC-Queue
+* Access Policy: Basic
+* Define who can send messages to the queue:
+* Select Only the specified AWS accounts, IAM users and roles
+In the box for this option, paste the Amazon Resource Name (ARN) for the `APIGateway-SQS` IAM role
+Note: For example, your IAM role might look similar to the following: arn:aws:iam::<account ID>:role/APIGateway-SQS.
+
+4. Define who can receive messages from the queue:
+Select Only the specified AWS accounts, IAM users and roles.
+In the box for this option, paste the ARN for the `SQS-Lambda-DynamoDB-Role` IAM role.
+Note: For example, your IAM role might look similar to the following: arn:aws:iam::<account_ID>:role/SQS-Lambda-DynamoDB-Role
 
 ### Creating a Lambda function
 
